@@ -12,6 +12,7 @@ func main(){
 
 	router.LoadHTMLGlob("templates/*")
 	router.GET("/",routes.Home)
-	router.POST("/upload",routes.Upload)
+	//router.POST("/upload",routes.Upload)
+	router.POST("/upload",routes.UploadInChunk)
 	router.Run()
 }
